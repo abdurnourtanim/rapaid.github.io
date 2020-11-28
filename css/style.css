@@ -24,6 +24,7 @@ body {
 }
 
 #main-header .navbar #logo {
+  color: #1BB1DC !important;
   font-size: 30px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -59,6 +60,10 @@ body {
   font-weight: 600;
 }
 
+#main-header .home-btn:hover {
+  color: #fff !important;
+  background: #1295b9;
+}
 #about h2 {
   color: rgba(75, 72, 72, 0.774);
 }
@@ -236,6 +241,7 @@ body {
 #protfolio .btn:hover {
   background: #1BB1DC;
   border: 3px solid #1BB1DC;
+  color: #fff;
 }
 
 #protfolio h2 {
@@ -323,7 +329,7 @@ body {
 }
 
 #contact .contact-subscribe .subscribe {
-  border-radius: 0;
+  border-radius: 0 5px 5px 0;
   background: #1BB1DC;
   color: #fff;
   -webkit-transition: .3s;
@@ -354,7 +360,7 @@ body {
 }
 
 #contact .contact-social-icons ul {
-  margin-top: 43px;
+  margin-top: -6px;
 }
 
 #contact .contact-social-icons ul li:hover a {
@@ -362,14 +368,19 @@ body {
 }
 
 #contact .contact-social-icons ul li a {
-  text-decoration: none;
-  font-size: 18px;
-  background: #1BB1DC;
-  border-radius: 50%;
-  color: #fff;
-  padding: 7px 15px;
-  -webkit-transition: .3s;
-  transition: .3s;
+    text-decoration: none;
+    font-size: 18px;
+    background: #1BB1DC;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px 13px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-left: 6px;
 }
 
 footer p a {
@@ -418,6 +429,7 @@ footer p a:hover {
   }
   #services .service-2 .service-icon-with-text {
     text-align: center;
+    margin-left: 0;
   }
   .call-action-box {
     text-align: center;
