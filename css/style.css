@@ -199,6 +199,9 @@ body {
 .call-action-box h3 {
   font-size: 34px;
   font-weight: 900;
+  color: #1295B9;
+  border: 2px solid #ffffff6b;
+  padding: 0 0 0 17px;
 }
 
 .call-action-box p {
