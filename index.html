@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapaid</title>
-    <script src="https://kit.fontawesome.com/e55cecec46.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/uikit.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
+
 </head>
 
 <body>
@@ -208,19 +208,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">
-                        <span>274</span>
+                        <span class="count-number">274</span>
                         <p class="text-muted">Clients</p>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <span>1,393</span>
+                        <span class="count-number">1,393</span>
                         <p class="text-muted">Projects</p>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <span>3,292</span>
+                        <span class="count-number">3,292</span>
                         <p class="text-muted">Hours Of Support</p>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <span>172</span>
+                        <span class="count-number">172</span>
                         <p class="text-muted">Hard Workers</p>
                     </div>
                 </div>
@@ -400,13 +400,13 @@
                                     <li><a href="">Privacy policy</a></li>
                                 </ul>
                             </div>
-                            <div class="contact-address mt-5 pt-0 pt-lg-4">
+                            <div class="contact-address  pt-0 pt-lg-4">
                                 <h5>Contact us</h5>
                                 <p>
                                     A108 Agrabad <br> Chattogram, Bangladesh <br> United States <br> Phone: +88 0130879**** <br> Email: something@gamil.com
                                 </p>
                             </div>
-                            <div class="contact-social-icons mt-3 pt-0 pt-lg-1">
+                            <div class="contact-social-icons mt-4 pt-0 pt-lg-1">
                                 <ul class="list-unstyled">
                                     <li class="d-inline"><a href="https://twitter.com/tanim_abdur"><i class="fab fa-twitter"></i></a></li>
                                     <li class="d-inline"><a href="https://web.facebook.com/abdurnurtanim11?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a></li>
@@ -420,18 +420,19 @@
                 <div class="col-lg-6 mt-5 mt-lg-0">
                     <h6>SEND US A MESSAGE</h6>
                     <p class="text-muted mt-0 mt-md-3">Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
-                    <form class="text-center">
+                    <form class="text-center" id="form">
                         <div class="input-group mt-3 mt-lg-5">
-                            <input class="form-control" type="text" placeholder="Your Name">
+                            <input class="form-control" type="text" name="name" placeholder="Your Name">
                         </div>
                         <div class="input-group mt-3">
-                            <input class="form-control" type="email" placeholder="Your Email">
+                            <input class="form-control" type="email" name="email" placeholder="Your Email">
                         </div>
                         <div class="input-group mt-3">
-                            <input class="form-control" type="text" placeholder="Subject">
+                            <input class="form-control" type="text" name="subject" placeholder="Subject">
                         </div>
-                        <textarea class="form-control mt-3" placeholder="Massage" cols="30" rows="5"></textarea>
-                        <button class="btn mt-3 px-3">Send Massage</button>
+                        <textarea class="form-control mt-3" name="message" placeholder="Massage" cols="30" rows="5"></textarea>
+                        <!-- <button class="btn mt-3 px-3">Send Massage</button> -->
+                        <input type="submit" value="Send Message" class="btn mt-3 px-3">
                     </form>
                 </div>
             </div>
@@ -453,13 +454,23 @@
     </footer>
     <!-- End footer section -->
 
-
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Uikit -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Waypoints-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+    <!-- CountUp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+
+    <!-- custom javascript file link-->
     <script src="js/main.js"></script>
 </body>
 
